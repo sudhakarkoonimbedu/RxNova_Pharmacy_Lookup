@@ -1,0 +1,891 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "performLogin",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 23172819862,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "the user access the Hybrid Desktop Application",
+            "match": {
+              "location": "SearchPharmacyLookUpAndVerifySubmittedInformation.user_can_access_the_Hybrid_desktop_application(String,String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "userid",
+                  ""
+                ],
+                "line": 5
+              },
+              {
+                "cells": [
+                  "password",
+                  ""
+                ],
+                "line": 6
+              },
+              {
+                "cells": [
+                  "region",
+                  ""
+                ],
+                "line": 7
+              }
+            ],
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 3602417949,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HybridDesktop_SharedResource.beforeTest(Scenario)"
+            }
+          }
+        ],
+        "line": 31,
+        "name": "Pharmacy Lookup search with valid data",
+        "description": "",
+        "id": "aps---33512---pharmacylookup-search-and-verify-benefits-and-eligibility-medical-benefit-tab;pharmacy-lookup-search-with-valid-data;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 724050,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HybridDesktop_SharedResource.afterTest(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 21808850798,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "User in Landing Page, he selects the application from menu",
+            "match": {
+              "location": "SearchPharmacyLookUpAndVerifySubmittedInformation.the_user_selects_the_application_from_menu_options(String,String\u003e)"
+            },
+            "matchedColumns": [
+              0
+            ],
+            "rows": [
+              {
+                "cells": [
+                  "menu",
+                  "Miscellaneous-\u003eRxNova Connect"
+                ],
+                "line": 12
+              }
+            ],
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3616009044,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User perform search for existing pharmacy by entering details in Pharmacy Lookup",
+            "match": {
+              "location": "APS33512_VerifyPharmacyLookUpBenefitsEligibility_MedicalBenefit.User_perform_search_for_existing_pharmacy_by_entering_details_in_Pharmacy_Lookup(String,String\u003e)"
+            },
+            "matchedColumns": [
+              1,
+              2,
+              3
+            ],
+            "rows": [
+              {
+                "cells": [
+                  "PharmacyNPI",
+                  "1710927462"
+                ],
+                "line": 14
+              },
+              {
+                "cells": [
+                  "RxNumber",
+                  "120005552999"
+                ],
+                "line": 15
+              },
+              {
+                "cells": [
+                  "StartDate",
+                  "01/16/2020"
+                ],
+                "line": 16
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2470963574,
+              "status": "passed"
+            },
+            "output": [
+              "Completed Scenario"
+            ],
+            "line": 17,
+            "name": "Member details should be displayed",
+            "match": {
+              "location": "SearchPharmacyLookUpAndVerifySubmittedInformation.verify_member_details(String,String\u003e)"
+            },
+            "matchedColumns": [
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13
+            ],
+            "rows": [
+              {
+                "cells": [
+                  "MemberID",
+                  "Member ID^90413000100"
+                ],
+                "line": 18
+              },
+              {
+                "cells": [
+                  "DateOfBirth",
+                  "Date of Birth^01/01/1940"
+                ],
+                "line": 19
+              },
+              {
+                "cells": [
+                  "MemberName",
+                  "Member Name^MBRNONBRIDGECUST RWT"
+                ],
+                "line": 20
+              },
+              {
+                "cells": [
+                  "Error",
+                  "Error^"
+                ],
+                "line": 21
+              },
+              {
+                "cells": [
+                  "Date",
+                  "Date^07/30/2020"
+                ],
+                "line": 22
+              },
+              {
+                "cells": [
+                  "Time",
+                  "Time^14:46:03"
+                ],
+                "line": 23
+              },
+              {
+                "cells": [
+                  "CICSStatus",
+                  "CICS Status^PWE"
+                ],
+                "line": 24
+              },
+              {
+                "cells": [
+                  "CustID",
+                  "Cust ID^319 - 0319HUMANA"
+                ],
+                "line": 25
+              },
+              {
+                "cells": [
+                  "ClientID",
+                  "Client ID^9007 - NBRG--CLNT1 - NONBRG CLIENT--PDP"
+                ],
+                "line": 26
+              },
+              {
+                "cells": [
+                  "Group",
+                  "Group^2 - RWNBRG REGR2 DONT USE REWORK10"
+                ],
+                "line": 27
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 9,
+            "name": "@Functional"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "performLogin",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 722125,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "the user access the Hybrid Desktop Application",
+            "match": {
+              "location": "SearchPharmacyLookUpAndVerifySubmittedInformation.user_can_access_the_Hybrid_desktop_application(String,String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "userid",
+                  ""
+                ],
+                "line": 5
+              },
+              {
+                "cells": [
+                  "password",
+                  ""
+                ],
+                "line": 6
+              },
+              {
+                "cells": [
+                  "region",
+                  ""
+                ],
+                "line": 7
+              }
+            ],
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 80200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HybridDesktop_SharedResource.beforeTest(Scenario)"
+            }
+          }
+        ],
+        "line": 51,
+        "name": "Verify Header details",
+        "description": "",
+        "id": "aps---33512---pharmacylookup-search-and-verify-benefits-and-eligibility-medical-benefit-tab;verify-header-details;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 570707,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HybridDesktop_SharedResource.afterTest(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 6749088923,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "User in Pharmacy Lookup Search Page and click on Blue arrow at MemberID Field",
+            "match": {
+              "location": "SearchPharmacyLookUpAndVerifySubmittedInformation.click_on_member_id_link()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2005531267,
+              "status": "passed"
+            },
+            "output": [
+              "Completed Scenario"
+            ],
+            "line": 37,
+            "name": "User verifies the header details",
+            "match": {
+              "location": "SearchPharmacyLookUpAndVerifySubmittedInformation.verify_header_details(String,String\u003e)"
+            },
+            "matchedColumns": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9
+            ],
+            "rows": [
+              {
+                "cells": [
+                  "CustomerSet",
+                  "Customer Set:^Humana"
+                ],
+                "line": 38
+              },
+              {
+                "cells": [
+                  "Customer",
+                  "Customer:^0319 - 0319HUMANA"
+                ],
+                "line": 39
+              },
+              {
+                "cells": [
+                  "Client",
+                  "Client:^9007 - NBRG--CLNT1"
+                ],
+                "line": 40
+              },
+              {
+                "cells": [
+                  "Group",
+                  "Group:^RWNBRG REGR2 DONT USE REWORK10"
+                ],
+                "line": 41
+              },
+              {
+                "cells": [
+                  "Gender",
+                  "Gender:^F"
+                ],
+                "line": 42
+              },
+              {
+                "cells": [
+                  "MemberID",
+                  "Member ID:^000000090413000100"
+                ],
+                "line": 43
+              },
+              {
+                "cells": [
+                  "AltMemberID",
+                  "Alt Member ID:^000000090413000100"
+                ],
+                "line": 44
+              },
+              {
+                "cells": [
+                  "FirstName",
+                  "First Name:^RWTC4"
+                ],
+                "line": 45
+              },
+              {
+                "cells": [
+                  "LastName",
+                  "Last Name:^MBRNONBRIDGECUST"
+                ],
+                "line": 46
+              },
+              {
+                "cells": [
+                  "DOB",
+                  "DOB:^01/01/1940"
+                ],
+                "line": 47
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 34,
+            "name": "@Functional"
+          }
+        ]
+      },
+      {
+        "line": 3,
+        "name": "performLogin",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "result": {
+              "duration": 612090,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "the user access the Hybrid Desktop Application",
+            "match": {
+              "location": "SearchPharmacyLookUpAndVerifySubmittedInformation.user_can_access_the_Hybrid_desktop_application(String,String\u003e)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "userid",
+                  ""
+                ],
+                "line": 5
+              },
+              {
+                "cells": [
+                  "password",
+                  ""
+                ],
+                "line": 6
+              },
+              {
+                "cells": [
+                  "region",
+                  ""
+                ],
+                "line": 7
+              }
+            ],
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 102015,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HybridDesktop_SharedResource.beforeTest(Scenario)"
+            }
+          }
+        ],
+        "line": 96,
+        "name": "Verify Benefits and Eligibility Medical Benefit Tab",
+        "description": "",
+        "id": "aps---33512---pharmacylookup-search-and-verify-benefits-and-eligibility-medical-benefit-tab;verify-benefits-and-eligibility-medical-benefit-tab;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 584822,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HybridDesktop_SharedResource.afterTest(Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 20910513,
+              "status": "passed"
+            },
+            "line": 55,
+            "name": "User in Pharmacy Lookup details page",
+            "match": {
+              "location": "SearchPharmacyLookUpAndVerifySubmittedInformation.verify_pharmacy_lookup_detail()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1079168789,
+              "status": "passed"
+            },
+            "line": 56,
+            "name": "User click on Benefits Eligibility icon",
+            "match": {
+              "location": "VerifyPharmacyLookUpBenefitsEligibilityDetail.user_click_on_benefits_eligibility()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1745714086,
+              "status": "passed"
+            },
+            "line": 57,
+            "name": "User click on Medical Benefit",
+            "match": {
+              "location": "APS33512_VerifyPharmacyLookUpBenefitsEligibility_MedicalBenefit.user_click_on_medical_benefits()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1925893145,
+              "status": "passed"
+            },
+            "line": 58,
+            "name": "User verifies Medical Benefit HRA details",
+            "match": {
+              "location": "APS33512_VerifyPharmacyLookUpBenefitsEligibility_MedicalBenefit.user_verifies_medicalbenefit_hra_details(String,String\u003e)"
+            },
+            "matchedColumns": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5
+            ],
+            "rows": [
+              {
+                "cells": [
+                  "HRA_StartDate",
+                  "Start Date^"
+                ],
+                "line": 59
+              },
+              {
+                "cells": [
+                  "HRA_EndDate",
+                  "End Date^"
+                ],
+                "line": 60
+              },
+              {
+                "cells": [
+                  "HRA_OriginalBalance",
+                  "Original Balance^"
+                ],
+                "line": 61
+              },
+              {
+                "cells": [
+                  "HRA_AvailableBalance",
+                  "Available Balance^"
+                ],
+                "line": 62
+              },
+              {
+                "cells": [
+                  "HRA_ProcessDate",
+                  "Process Date^"
+                ],
+                "line": 63
+              },
+              {
+                "cells": [
+                  "HRA_Radio",
+                  "HRA"
+                ],
+                "line": 64
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1324510104,
+              "status": "passed"
+            },
+            "line": 65,
+            "name": "User click on FSA radioButton and Verify FSA details",
+            "match": {
+              "location": "APS33512_VerifyPharmacyLookUpBenefitsEligibility_MedicalBenefit.user_click_on_fsa_radiobutton_and_verify_fsa_details(String,String\u003e)"
+            },
+            "matchedColumns": [
+              6,
+              7,
+              8,
+              9,
+              10,
+              11
+            ],
+            "rows": [
+              {
+                "cells": [
+                  "FSA_StartDate",
+                  "Start Date^"
+                ],
+                "line": 66
+              },
+              {
+                "cells": [
+                  "FSA_EndDate",
+                  "End Date^"
+                ],
+                "line": 67
+              },
+              {
+                "cells": [
+                  "FSA_OriginalBalance",
+                  "Original Balance^"
+                ],
+                "line": 68
+              },
+              {
+                "cells": [
+                  "FSA_AvailableBalance",
+                  "Available Balance^"
+                ],
+                "line": 69
+              },
+              {
+                "cells": [
+                  "FSA_ProcessDate",
+                  "Process Date^"
+                ],
+                "line": 70
+              },
+              {
+                "cells": [
+                  "FSA_Radio",
+                  "FSA"
+                ],
+                "line": 71
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2122283609,
+              "status": "passed"
+            },
+            "line": 72,
+            "name": "User click on HSA radioButton and Verify HSA details",
+            "match": {
+              "location": "APS33512_VerifyPharmacyLookUpBenefitsEligibility_MedicalBenefit.user_click_on_hsa_radiobutton_and_verify_hsa_details(String,String\u003e)"
+            },
+            "matchedColumns": [
+              16,
+              17,
+              12,
+              13,
+              14,
+              15
+            ],
+            "rows": [
+              {
+                "cells": [
+                  "HSA_StartDate",
+                  "Start Date^"
+                ],
+                "line": 73
+              },
+              {
+                "cells": [
+                  "HSA_EndDate",
+                  "End Date^"
+                ],
+                "line": 74
+              },
+              {
+                "cells": [
+                  "HSA_OriginalBalance",
+                  "Original Balance^"
+                ],
+                "line": 75
+              },
+              {
+                "cells": [
+                  "HSA_AvailableBalance",
+                  "Available Balance^"
+                ],
+                "line": 76
+              },
+              {
+                "cells": [
+                  "HSA_ProcessDate",
+                  "Process Date^"
+                ],
+                "line": 77
+              },
+              {
+                "cells": [
+                  "HSA_Radio",
+                  "HSA"
+                ],
+                "line": 78
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2092609429,
+              "status": "passed"
+            },
+            "line": 79,
+            "name": "User click on ADJ radioButton and Verify ADJ details",
+            "match": {
+              "location": "APS33512_VerifyPharmacyLookUpBenefitsEligibility_MedicalBenefit.user_click_on_adj_radiobutton_and_verify_adj_details(String,String\u003e)"
+            },
+            "matchedColumns": [
+              18,
+              19,
+              20,
+              21,
+              22,
+              23
+            ],
+            "rows": [
+              {
+                "cells": [
+                  "ADJ_StartDate",
+                  "Start Date^"
+                ],
+                "line": 80
+              },
+              {
+                "cells": [
+                  "ADJ_EndDate",
+                  "End Date^"
+                ],
+                "line": 81
+              },
+              {
+                "cells": [
+                  "ADJ_OriginalBalance",
+                  "Original Balance^"
+                ],
+                "line": 82
+              },
+              {
+                "cells": [
+                  "ADJ_AvailableBalance",
+                  "Available Balance^"
+                ],
+                "line": 83
+              },
+              {
+                "cells": [
+                  "ADJ_ProcessDate",
+                  "Process Date^"
+                ],
+                "line": 84
+              },
+              {
+                "cells": [
+                  "ADJ_Radio",
+                  "ADJ"
+                ],
+                "line": 85
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2084394332,
+              "status": "passed"
+            },
+            "output": [
+              "Completed Scenario"
+            ],
+            "line": 86,
+            "name": "User click on SPAP radioButton and Verify SPAP details",
+            "match": {
+              "location": "APS33512_VerifyPharmacyLookUpBenefitsEligibility_MedicalBenefit.user_click_on_spap_radiobutton_and_verify_spap_details(String,String\u003e)"
+            },
+            "matchedColumns": [
+              24,
+              25,
+              26,
+              27,
+              28,
+              29
+            ],
+            "rows": [
+              {
+                "cells": [
+                  "SPAP_StartDate",
+                  "Start Date^"
+                ],
+                "line": 87
+              },
+              {
+                "cells": [
+                  "SPAP_EndDate",
+                  "End Date^"
+                ],
+                "line": 88
+              },
+              {
+                "cells": [
+                  "SPAP_OriginalBalance",
+                  "Original Balance^"
+                ],
+                "line": 89
+              },
+              {
+                "cells": [
+                  "SPAP_AvailableBalance",
+                  "Available Balance^"
+                ],
+                "line": 90
+              },
+              {
+                "cells": [
+                  "SPAP_ProcessDate",
+                  "Process Date^"
+                ],
+                "line": 91
+              },
+              {
+                "cells": [
+                  "SPAP_Radio",
+                  "SPAP"
+                ],
+                "line": 92
+              }
+            ],
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 53,
+            "name": "@Functional"
+          }
+        ]
+      }
+    ],
+    "name": "APS - 33512 - PharmacyLookup Search and verify Benefits and Eligibility Medical Benefit Tab",
+    "description": "",
+    "id": "aps---33512---pharmacylookup-search-and-verify-benefits-and-eligibility-medical-benefit-tab",
+    "keyword": "Feature",
+    "uri": "features/PharmacyLookup/APS33512_PharmacyLookup_BenefitsEligibility_Verify_MedicalBenefit.feature"
+  }
+]
